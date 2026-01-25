@@ -183,7 +183,7 @@
               <tr onmouseover="document.getElementById('hidden_preprints').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_preprints').style.display='none';">
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Preprints</heading>
+                  <heading>Articles (Training Dynamics)</heading>
                   <!-- turn into "projects" and do one for saltelli, one for arnulf, etc. -->
                   <!-- <p id="hidden_preprints" style="display:none">
                     +1 Soon! <i class='far fa-grin-hearts' style='font-size:24px;color:rgb(255, 166, 0)'></i>
@@ -216,12 +216,10 @@
                     <!-- <p id="hidden_paper_1" style="display:none"> -->
                     <br>
                     <a href="https://github.com/arseniqum/edge-of-stochastic-stability" class="links">Link to our repository.</a>
-                    We managed to understand in what sense also <em>mini-batch SGD</em> trains at the Edge of stability: The average largest eigenvalue of mini-batch Hessians stabilizes at 2/learning rate,
-                    pushing the full-batch sharpness down. This explains SGD's implicit regularization toward flatter minima and provides a theoretical basis for key empirical phenomena in small-batch training.
+                    We provide a framework to describe what EoS (Now EoSS) is for general optimizer, we show that <em>mini-batch SGD</em> trains at the Edge of Stochastic Stability: Batch Sharpness (expected directional mini-batch curvature) 2/learning rate,
                   </details>
                 </td>
               </tr>
-
 
               <tr>
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
@@ -237,14 +235,12 @@
                         <br>
                         <strong>
                         Pierfrancesco Beneventano</strong>,  
-                        <a href="https://scholar.google.com/citations?user=BnQdO2UAAAAJ" class="links">Prof. Blake Woodworth</a>, 
+                        <a href="https://scholar.google.com/citations?user=BnQdO2UAAAAJ" class="links">Blake Woodworth</a>, 
                         <br>
                     </summary>
                   <!-- <p id="hidden_paper_1" style="display:none"> -->
                     <br>
-                    We found out that neural networks often implicitly identify what input variables are relevant in the first layer. 
-                    We proved that this is the case when training with SGD (with higher speed for smaller batch or bigger step size), but it is not the case when training with vanilla GD.
-                  <!-- </p> -->
+                    We proved that GD converges for a family of linear networks even with big step size and we characterize location of convergence no matter the initialization.
                   </details>
                 </td>
               </tr>
@@ -270,7 +266,7 @@
                     </summary>
                   <!-- <p id="hidden_paper_1" style="display:none"> -->
                     <br>
-                    We found out that neural networks often implicitly identify what input variables are relevant in the first layer. 
+                    Neural networks often implicitly identify what input variables are relevant in the first layer. 
                     We proved that this is the case when training with SGD (with higher speed for smaller batch or bigger step size), but it is not the case when training with vanilla GD.
                   <!-- </p> -->
                   </details>
@@ -302,6 +298,27 @@
                   </details>
                 </td>
               </tr>
+
+
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseover="document.getElementById('hidden_preprints').style.display = 'block';"
+                onmouseout="document.getElementById('hidden_preprints').style.display='none';">
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Articles (Others)</heading>
+                  <!-- turn into "projects" and do one for saltelli, one for arnulf, etc. -->
+                  <!-- <p id="hidden_preprints" style="display:none">
+                    +1 Soon! <i class='far fa-grin-hearts' style='font-size:24px;color:rgb(255, 166, 0)'></i>
+                  </p> -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
 
 
 

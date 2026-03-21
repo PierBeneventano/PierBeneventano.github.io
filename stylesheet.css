@@ -130,3 +130,25 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.research-subsection {
+  margin: 14px 0 6px 0;
+}
+
+.compact-talks {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.compact-talks li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.compact-talks li:last-child {
+  margin-bottom: 0;
+}
+
+.talk-title {
+  font-weight: 700;
+}

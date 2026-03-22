@@ -152,3 +152,12 @@ span.highlight {
 .talk-title {
   font-weight: 700;
 }
+
+.scholar-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.scholar-link .ai {
+  font-size: 1.05em;
+}

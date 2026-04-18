@@ -153,6 +153,33 @@ span.highlight {
   font-weight: 700;
 }
 
+.agent-thumb-card {
+  width: 160px;
+  min-height: 90px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 3px dashed #b35ac0;
+  border-radius: 16px;
+  background: #f5f0ff;
+  color: #241a38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.agent-thumb-card span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.agent-thumb-card small {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
 .scholar-link {
   display: inline-flex;
   align-items: center;

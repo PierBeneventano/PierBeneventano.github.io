@@ -244,7 +244,9 @@
                         Agent Systems for Academic Research Automation</a>.
                       <br>
                       <strong>Pierfrancesco Beneventano*</strong>, Riccardo Neumarker*, <a href="https://superurop.mit.edu/scholars/mahmoud-abdelmoneum/" class="links">Mahmoud Abdelmoneum</a>, <a href="https://www.mbacvanski.xyz/" class="links">Marc Bacvanski</a>, <a href="https://poggio-lab.mit.edu/people/yulu-gan/" class="links">Yulu Gan</a>,
-                      <a href="https://people.epfl.ch/mehdi.hajoub" class="links">Mehdi Hajoub</a>, <a href="https://poggio-lab.mit.edu/people/qianli-liao/" class="links">Qianli Liao</a>, <a href="https://www.linkedin.com/in/emanuele-rimoldi" class="links">Emanuele Rimoldi</a>, <a href="https://www.kushagratiwary.com/" class="links">Kushagra Tiwary</a>, <a href="https://scholar.google.com/citations?user=P5fPJ1oAAAAJ" class="links">Liu Ziyin</a>, <a href="https://tomergalanti.github.io/" class="links">Tomer Galanti</a>, <a href="https://www.insead.edu/faculty/theodoros-evgeniou" class="links">Theodoros Evgeniou</a>,
+                      <a href="https://people.epfl.ch/mehdi.hajoub" class="links">Mehdi Hajoub</a>, <a href="https://poggio-lab.mit.edu/people/qianli-liao/" class="links">Qianli Liao</a>,
+                      <br>
+                      <a href="https://www.linkedin.com/in/emanuele-rimoldi" class="links">Emanuele Rimoldi</a>, <a href="https://www.kushagratiwary.com/" class="links">Kushagra Tiwary</a>, <a href="https://scholar.google.com/citations?user=P5fPJ1oAAAAJ" class="links">Liu Ziyin</a>, <a href="https://tomergalanti.github.io/" class="links">Tomer Galanti</a>, <a href="https://www.insead.edu/faculty/theodoros-evgeniou" class="links">Theodoros Evgeniou</a>,
                       <a href="https://scholar.google.com/citations?user=WgAGy7wAAAAJ" class="links">Tomaso Poggio</a>.
                       <br>
                     </summary>
@@ -278,6 +280,31 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+              <tr>
+                <td style="padding:20px;width:15%;vertical-align:middle">
+                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                </td>
+                <td width="75%" valign="middle">
+                  <details>
+                    <summary>
+                      <a href="https://arxiv.org/pdf/2604.14108" class="links">
+                        Momentum Further Constrains Sharpness at the Edge of Stochastic Stability</a>.
+                        <br>
+                        <a href="https://scholar.google.com/citations?user=CI36v0sAAAAJ" class="links">Arseniy Andreyev</a>,
+                        Advikar Ananthkumar,
+                        Marc Walden,
+                        <a href="https://scholar.google.com/citations?user=WgAGy7wAAAAJ" class="links">Tomaso Poggio</a>,
+                        <strong>Pierfrancesco Beneventano</strong>.
+                        <br>
+                    </summary>
+                    <br>
+                    TL;DR: momentum also exhibits an EoSS-like regime, but the sharpness level depends qualitatively on batch size.
+                    At small batch sizes it favors flatter regions, while at large batch sizes it recovers a more classical stabilizing effect
+                    and supports sharper solutions, with direct implications for tuning and coupling hyperparameters.
+                  </details>
+                </td>
+              </tr>
 
               <tr>
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
@@ -325,31 +352,6 @@
                     <br>
                     <a href="https://github.com/arseniqum/edge-of-stochastic-stability" class="links">Link to our repository.</a>
                     We provide a framework to describe what EoS (Now EoSS) is for general optimizer, we show that <em>mini-batch SGD</em> trains at the Edge of Stochastic Stability: Batch Sharpness (expected directional mini-batch curvature) 2/learning rate,
-                  </details>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
-                </td>
-                <td width="75%" valign="middle">
-                  <details>
-                    <summary>
-                      <a href="https://arxiv.org/pdf/2604.14108" class="links">
-                        Momentum Further Constrains Sharpness at the Edge of Stochastic Stability</a>.
-                        <br>
-                        Arseniy Andreyev,
-                        Advikar Ananthkumar,
-                        Marc Walden,
-                        <a href="https://scholar.google.com/citations?user=WgAGy7wAAAAJ" class="links">Tomaso Poggio</a>,
-                        <strong>Pierfrancesco Beneventano</strong>.
-                        <br>
-                    </summary>
-                    <br>
-                    TL;DR: momentum also exhibits an EoSS-like regime, but the sharpness level depends qualitatively on batch size.
-                    At small batch sizes it favors flatter regions, while at large batch sizes it recovers a more classical stabilizing effect
-                    and supports sharper solutions, with direct implications for tuning and coupling hyperparameters.
                   </details>
                 </td>
               </tr>

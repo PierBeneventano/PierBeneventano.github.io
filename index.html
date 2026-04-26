@@ -140,7 +140,7 @@
                     </div>
                     <div>
                       Recently, I have been exploring the fundamental limits of agentic systems and the mathematical theory one can develop around them.
-                      For instance, with the project <a href="https://poggioai.github.io/" class="links">PoggioAI</a> I want to understand to what extent agentic systems can automate high-quality research and, if so, identify, approach, and possibly attain this upper bound to automation.
+                      For instance, with the project <a href="https://poggioai.github.io/" class="links">pAI</a> I want to understand to what extent agentic systems can automate high-quality research and, if so, identify, approach, and possibly attain this upper bound to automation.
                       <br><br>
                       In parallel, I continue to work on the theoretical foundations of machine learning, particularly on deep neural networks and their optimization, as I did during my PhD.
                       In this direction, I'm interested in (1) where optimization algorithms converge on general landscapes, (2) how hyperparameters affect that, and (3) whether we can link this to changes in the performance of the resulting models.
@@ -170,6 +170,12 @@
                       <span class="talk-title">Implicit Regularization</span>, MIBR Summer School (MIT) 2024 -
                       <a href="https://www.youtube.com/watch?v=G70dA2tmbu0" class="links">talk</a>
                     </li>
+                    <li>
+                      <span class="talk-title">To What Extent Can We Automate ML Theory Today?</span> -
+                      <a href="https://www.youtube.com/watch?v=fPe4wynV-Rc" class="links">talk</a>
+                      ·
+                      <a href="https://cbmm.mit.edu/sites/default/files/publications/Survey_of_AI_for_Research_v0.pdf" class="links">survey</a>
+                    </li>
                   </ul>
                 </td>
                 
@@ -191,7 +197,7 @@
                   <heading>Articles (Agents)</heading>
                   <p>
                     This work is collected in a more accessible and continuously updated form at
-                    <a href="https://poggioai.github.io/" class="links">PoggioAI.github.io</a>.
+                    <a href="https://poggioai.github.io/" class="links">pAI</a>.
                   </p>
                 </td>
               </tr>
@@ -240,7 +246,7 @@
                 <td width="75%" valign="middle">
                   <details>
                     <summary>
-                      <a href="https://cbmm.mit.edu/sites/default/files/publications/Agent%20Systems%20for%20Academic%20Research%20Automation.pdf" class="links">
+                      <a href="https://cbmm.mit.edu/sites/default/files/publications/Survey_of_AI_for_Research_v0.pdf" class="links">
                         Agent Systems for Academic Research Automation</a>.
                       <br>
                       <strong>Pierfrancesco Beneventano*</strong>, Riccardo Neumarker*, <a href="https://superurop.mit.edu/scholars/mahmoud-abdelmoneum/" class="links">Mahmoud Abdelmoneum</a>, <a href="https://www.mbacvanski.xyz/" class="links">Marc Bacvanski</a>, <a href="https://poggio-lab.mit.edu/people/yulu-gan/" class="links">Yulu Gan</a>,
@@ -280,6 +286,30 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+
+              <tr>
+                <td style="padding:20px;width:15%;vertical-align:middle">
+                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                </td>
+                <td width="75%" valign="middle">
+                  <details>
+                    <summary>
+                      <a href="https://arxiv.org/pdf/2604.20614" class="links">
+                        Too Sharp, Too Sure: When Calibration Follows Curvature</a>.
+                        <br>
+                        Alessandro Morosini,
+                        Matea Gjika,
+                        <a href="https://scholar.google.com/citations?user=WgAGy7wAAAAJ" class="links">Tomaso Poggio</a>,
+                        <strong>Pierfrancesco Beneventano</strong>.
+                        <br>
+                    </summary>
+                    <br>
+                    TL;DR: calibration is not just a post-hoc property; during training it closely tracks curvature-based sharpness.
+                    We show that both Expected Calibration Error and Gauss-Newton curvature are governed by the same margin-tail mechanism,
+                    and use this to design a training objective that improves out-of-sample calibration without hurting accuracy.
+                  </details>
+                </td>
+              </tr>
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">

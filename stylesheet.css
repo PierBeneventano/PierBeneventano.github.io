@@ -180,6 +180,33 @@ span.highlight {
   font-size: 12px;
 }
 
+.other-thumb-card {
+  width: 160px;
+  min-height: 90px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 3px dashed #4a9d5c;
+  border-radius: 16px;
+  background: #eef9f0;
+  color: #17351f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.other-thumb-card span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.other-thumb-card small {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
 .scholar-link {
   display: inline-flex;
   align-items: center;

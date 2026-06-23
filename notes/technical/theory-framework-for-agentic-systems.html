@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The State of the Theory Framework for Agentic Systems | Notes</title>
+  <link rel="stylesheet" href="../notes.css?v=20260623-palette2">
+</head>
+<body>
+  <main>
+    <article class="note-shell">
+      <nav class="page-nav">
+        <a class="back-link" href="../index.html">Back to notes</a>
+        <a class="index-link" href="../../index.html">Main site</a>
+      </nav>
+
+      <header class="note-header">
+        <span class="badge technical">Living note</span>
+        <h1>The State of the Theory Framework for Agentic Systems</h1>
+        <p class="lede">
+          A first note on what a useful theory of agentic systems should try to preserve, and why many clean mathematical abstractions miss the parts that matter most in practice.
+        </p>
+        <p class="note-meta">Last updated: June 23, 2026</p>
+      </header>
+
+      <section class="note-body">
+        <p>
+          It is very easy to mathematize things. It is much harder to build mathematical models that are actually useful. In this context, useful means something more demanding than elegance or tractability:
+          it means the model minimally captures what matters practically. That is the standard I care about for agentic systems. Otherwise one risks building a theory of a shadow object — something mathematically crisp,
+          internally coherent, and only weakly connected to the systems that people are actually deploying and studying.
+        </p>
+        <p>
+          This is especially tempting for agentic systems because they seem to invite abstraction. There are loops, planners, verifiers, critics, memory modules, tool calls, and multi-agent decompositions, so it is easy to start drawing diagrams
+          and assigning symbols. But not every decomposition deserves a theory. A useful framework should preserve the practical asymmetries: where the verification signal comes from, which substeps are actually reliable, which components are only heuristically helpful,
+          where selection errors accumulate, and what kind of object is being produced in the end. Without those ingredients, the mathematics may describe an architecture class while saying very little about why some systems work and others fail.
+        </p>
+
+        <h2>What a useful framework should preserve</h2>
+        <ul>
+          <li>The difference between proposal, critique, comparison, verification, and execution.</li>
+          <li>The kind of artifact being produced: text, code, proof sketch, experimental plan, manuscript, patch.</li>
+          <li>Whether the system has access to local soundness signals or only weak heuristic preferences.</li>
+          <li>Where the useful diversity actually comes from, and where more branching only adds noise.</li>
+          <li>What the human is still doing that the formalism might be silently outsourcing.</li>
+        </ul>
+
+        <div class="callout technical">
+          My current bias is that the right theory framework for agentic systems should look less like a generic control loop and more like a structured map of information, verification, and error composition.
+        </div>
+
+        <div class="outline">
+          <span class="outline-label">Survey details to fold in later</span>
+          <ul>
+            <li>Framework dimensions from the survey: phases covered, artifacts produced, verification regime.</li>
+            <li>What should count as a "local soundness signal" across different research pipelines.</li>
+            <li>Why some systems are genuinely agentic and others are mostly orchestration wrappers.</li>
+            <li>Where current theory is too architecture-centric and not enough signal-centric.</li>
+          </ul>
+        </div>
+
+        <div class="footer-note">
+          Possible next revision: write this as a direct critique of the most common overly-clean abstractions people currently use.
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

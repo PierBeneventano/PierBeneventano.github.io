@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20260623-palette2">
 
   <!-- Icon for the browser tab -->
   <link rel="icon" type="image/png" href="/images/princeton.png"/>
@@ -342,7 +342,37 @@
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Muon</span>
+                    <small>Spectral dynamics</small>
+                  </div>
+                </td>
+                <td width="75%" valign="middle">
+                  <details>
+                    <summary>
+                      <a href="https://doi.org/10.48550/arXiv.2606.08388" class="links">
+                        The Spectral Dynamics and Noise Geometry of Muon</a>.
+                        <br>
+                        <strong>Pierfrancesco Beneventano</strong>,
+                        Mahmoud Abdelmoneum,
+                        <a href="https://scholar.google.com/citations?user=WgAGy7wAAAAJ" class="links">Tomaso Poggio</a>.
+                        <br>
+                    </summary>
+                    <br>
+                    TL;DR: Muon is not just gradient rescaling or low-rank regularization; its polar update creates a flat-update-spectrum bias.
+                    We derive singular-value dynamics showing when spectra flatten, separate this effect from norm-matched gradient descent and nuclear-norm explanations,
+                    and find regime-dependent behavior: helpful in small NanoGPT pretraining but not universally superior across architectures.
+                  </details>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td style="padding:20px;width:15%;vertical-align:middle">
+                  <div class="training-thumb-card">
+                    <span>EoS</span>
+                    <small>Data distribution</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -366,7 +396,10 @@
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Forgetting</span>
+                    <small>Initialization bias</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -391,7 +424,10 @@
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Weight Decay</span>
+                    <small>Training stability</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -415,7 +451,10 @@
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Calibration</span>
+                    <small>Curvature</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -439,7 +478,10 @@
 
               <tr>
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="SGD optimization" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Momentum</span>
+                    <small>EoSS</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -466,7 +508,10 @@
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Optimizer</span>
+                    <small>Implicit prior</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -492,7 +537,10 @@
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>EoSS</span>
+                    <small>Mini-batch SGD</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -516,7 +564,10 @@
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Flat/Sharp</span>
+                    <small>Solvable model</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -543,7 +594,10 @@
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>GD</span>
+                    <small>Flat minima</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -568,7 +622,10 @@
                 <!-- <tr onmouseover="document.getElementById('hidden_paper_1').style.display = 'block';"
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>Support</span>
+                    <small>Implicit regularization</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>
@@ -598,7 +655,10 @@
                 onmouseout="document.getElementById('hidden_paper_1').style.display='none';"> -->
                 <td style="padding:20px;width:15%;vertical-align:middle">
                   <!-- <img style="background-image:url('images/math-cropped.jpg'); border-style:none; width:160px; height:45px; background-position:center; padding-top:2pt;"> -->
-                  <img src="images/SGD.png" alt="PontTuset" style="border-style: none;width:160px; height:45px; background-position:center; padding-top:2pt;">
+                  <div class="training-thumb-card">
+                    <span>SGD</span>
+                    <small>Without replacement</small>
+                  </div>
                 </td>
                 <td width="75%" valign="middle">
                   <details>

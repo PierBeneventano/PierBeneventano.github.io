@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The State of Automation of Academic Research | Notes</title>
+  <link rel="stylesheet" href="../notes.css?v=20260623-palette2">
+</head>
+<body>
+  <main>
+    <article class="note-shell">
+      <nav class="page-nav">
+        <a class="back-link" href="../index.html">Back to notes</a>
+        <a class="index-link" href="../../index.html">Main site</a>
+      </nav>
+
+      <header class="note-header">
+        <span class="badge technical">Living note</span>
+        <h1>The State of Automation of Academic Research</h1>
+        <p class="lede">
+          A first attempt to separate the parts of research that are already being automated in a serious way from the parts that still resist automation for structural reasons.
+        </p>
+        <p class="note-meta">Last updated: June 23, 2026</p>
+      </header>
+
+      <section class="note-body">
+        <p>
+          The phrase "automating research" is too coarse to be useful. Different parts of research have very different structures, and current systems succeed on some of them far more than on others.
+          Retrieval, synthesis, code drafting, experiment scripting, literature triage, reviewer-style critique, and manuscript polishing are already within reach of strong agentic pipelines.
+          In those cases the system benefits from abundant local feedback: citations can be checked, code can be run, claims can be compared against sources, and drafts can be iterated quickly.
+        </p>
+        <p>
+          The hard parts are the ones where the objective is not merely producing an artifact but producing the right artifact for the right reason. Selecting a valuable question, noticing the hidden obstruction in a proof,
+          inventing the one formulation that compresses the whole problem, or judging whether an empirical success is actually saying something fundamental — these still seem much less automatable.
+          Not because models cannot imitate the surface form of these activities, but because the relevant feedback is sparse, delayed, and often only visible to someone with deep domain judgment.
+        </p>
+
+        <h2>A useful decomposition</h2>
+        <p>
+          Right now it seems more accurate to think of research automation as a layered stack:
+        </p>
+        <ul>
+          <li><strong>Artifact automation:</strong> drafting, editing, reformatting, implementing, testing, organizing references.</li>
+          <li><strong>Workflow automation:</strong> running loops of propose / critique / revise / verify across a multi-step pipeline.</li>
+          <li><strong>Research-direction automation:</strong> deciding what is actually worth doing next.</li>
+          <li><strong>Taste and judgment:</strong> recognizing when a result matters, when an explanation is fake, or when a direction is sterile.</li>
+        </ul>
+        <p>
+          The first two layers are moving quickly. The third is mixed. The fourth is the real bottleneck.
+        </p>
+
+        <h2>Where current demos mislead</h2>
+        <p>
+          Many impressive demos combine strong artifact automation with human-selected questions, human-curated evaluation criteria, and human interpretation of what counts as success.
+          This is not a criticism. It is just important to keep the layers separate. A system that can reliably transform a good hypothesis into a coherent, literature-grounded, experimentally supported draft
+          is already extremely useful, even if it still depends on a human for taste, prioritization, and final judgment. The mistake is to read this as evidence that the entire research process has been automated.
+        </p>
+
+        <div class="callout technical">
+          My current view is that academic research is becoming highly automatable at the level of execution and increasingly automatable at the level of structured search, but still weakly automatable at the level of taste.
+        </div>
+
+        <div class="outline">
+          <span class="outline-label">Next pieces to add</span>
+          <ul>
+            <li>A sharper distinction between theorem-driven, empirical, and systems research.</li>
+            <li>What "humans in the loop" should actually mean in serious research pipelines.</li>
+            <li>Failure modes: overclaiming, fake novelty, false verification, and automation theater.</li>
+            <li>Which parts of ML theory are likely to be automated first.</li>
+          </ul>
+        </div>
+
+        <div class="footer-note">
+          Possible next revision: turn this into a table with research stages, current automation level, and main blocking signal.
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

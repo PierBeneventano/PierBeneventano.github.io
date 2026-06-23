@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Edge of Stability Generalizes to Mini-Batch Algorithms | Notes</title>
+  <link rel="stylesheet" href="../notes.css?v=20260623-palette2">
+</head>
+<body>
+  <main>
+    <article class="note-shell">
+      <nav class="page-nav">
+        <a class="back-link" href="../index.html">Back to notes</a>
+        <a class="index-link" href="../../index.html">Main site</a>
+      </nav>
+
+      <header class="note-header">
+        <span class="badge technical">Living note</span>
+        <h1>How Edge of Stability Generalizes to Mini-Batch Algorithms</h1>
+        <p class="lede">
+          What mini-batch algorithms teach us about which parts of Edge of Stability are robust, and which parts depend on the optimizer and sampling process.
+        </p>
+        <p class="note-meta">Last updated: June 23, 2026</p>
+      </header>
+
+      <section class="note-body">
+        <p>
+          The full-batch Edge of Stability story is already subtle: training does not simply stay in the classically stable region, but tends to organize near an instability boundary.
+          Mini-batch algorithms make this more interesting rather than less. The relevant curvature is no longer just the full-batch top Hessian eigenvalue, and the stability boundary is no longer a single deterministic threshold.
+          Batch size, stochastic fluctuations, momentum, and the geometry of the sampled mini-batches all become part of the mechanism.
+        </p>
+        <p>
+          This suggests that Edge of Stability is not best understood as one universal number such as a fixed sharpness threshold. A better picture is a family of algorithm-dependent instability boundaries.
+          The mini-batch case teaches us what survives the passage from idealized gradient descent to practical training: the tendency to self-organize near the edge remains, but the edge itself is shaped by the update rule,
+          the noise source, and the local curvature seen by the algorithm.
+        </p>
+
+        <div class="outline">
+          <span class="outline-label">Pieces to develop</span>
+          <ul>
+            <li>Batch sharpness versus full-batch sharpness.</li>
+            <li>Deterministic linear stability versus stochastic stability.</li>
+            <li>How batch size changes the effective edge.</li>
+            <li>How momentum changes the sharpness level selected by training.</li>
+            <li>What mini-batch EoS teaches us about the original full-batch picture.</li>
+          </ul>
+        </div>
+
+        <div class="callout technical">
+          The main point I want to sharpen: mini-batch algorithms do not merely add noise to Edge of Stability. They change what the edge is.
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

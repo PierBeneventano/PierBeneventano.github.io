@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Implications of Edge of Stability | Notes</title>
+  <link rel="stylesheet" href="../notes.css?v=20260623-palette2">
+</head>
+<body>
+  <main>
+    <article class="note-shell">
+      <nav class="page-nav">
+        <a class="back-link" href="../index.html">Back to notes</a>
+        <a class="index-link" href="../../index.html">Main site</a>
+      </nav>
+
+      <header class="note-header">
+        <span class="badge technical">Living note</span>
+        <h1>Implications of Edge of Stability</h1>
+        <p class="lede">
+          What Edge of Stability changes about how we think about optimization, sharpness, implicit bias, hyperparameters, and practical training dynamics.
+        </p>
+        <p class="note-meta">Last updated: June 23, 2026</p>
+      </header>
+
+      <section class="note-body">
+        <p>
+          Edge of Stability is not just a curiosity about loss curves. If training routinely operates near an instability boundary, then the optimizer is not merely descending a landscape until it reaches a passive minimum.
+          The algorithm is interacting with curvature, stepsize, stochasticity, and architecture in a way that can shape which regions are reachable and which solutions are selected.
+        </p>
+        <p>
+          This changes the role of sharpness. Sharpness is not only a post-hoc property of a solution, and it is not always a clean proxy for generalization. It can be part of the training mechanism itself.
+          The implication is that hyperparameters are not just knobs for speed or regularization strength; they may determine the instability boundary around which training self-organizes.
+          This makes Edge of Stability a useful lens for implicit bias, but also a warning against overinterpreting any single curvature threshold.
+        </p>
+
+        <div class="outline">
+          <span class="outline-label">Questions to organize</span>
+          <ul>
+            <li>What does EoS say about why large learning rates can help?</li>
+            <li>When does operating near instability improve or damage generalization?</li>
+            <li>How should EoS change hyperparameter tuning?</li>
+            <li>What does EoS imply about flatness, sharpness, and implicit bias?</li>
+            <li>Which conclusions survive for SGD, momentum, Adam, and other practical optimizers?</li>
+          </ul>
+        </div>
+
+        <div class="callout technical">
+          The version I eventually want is a practical map: what EoS explains, what it does not explain, and what it tells us to measure differently.
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

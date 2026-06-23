@@ -158,10 +158,10 @@ span.highlight {
   min-height: 90px;
   box-sizing: border-box;
   padding: 12px 10px;
-  border: 3px dashed #b35ac0;
+  border: 3px dashed #5aa7d8;
   border-radius: 16px;
-  background: #f5f0ff;
-  color: #241a38;
+  background: #eff8ff;
+  color: #17384d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,6 +176,33 @@ span.highlight {
 }
 
 .agent-thumb-card small {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.training-thumb-card {
+  width: 160px;
+  min-height: 90px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 3px dashed #b35ac0;
+  border-radius: 16px;
+  background: #f5f0ff;
+  color: #241a38;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.training-thumb-card span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.training-thumb-card small {
   margin-top: 6px;
   font-size: 12px;
 }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>When and Why You Shouldn't Trust Your Models of SGD | Notes</title>
+  <link rel="stylesheet" href="../notes.css?v=20260623-palette2">
+</head>
+<body>
+  <main>
+    <article class="note-shell">
+      <nav class="page-nav">
+        <a class="back-link" href="../index.html">Back to notes</a>
+        <a class="index-link" href="../../index.html">Main site</a>
+      </nav>
+
+      <header class="note-header">
+        <span class="badge technical">Living note</span>
+        <h1>When and Why You Shouldn't Trust Your Models of SGD</h1>
+        <p class="lede">
+          To what extent, and for what purposes in practice, does it make sense to consider GD+noise or other models of SGD and Adam?
+        </p>
+        <p class="note-meta">Last updated: June 23, 2026</p>
+      </header>
+
+      <section class="note-body">
+        <p>
+          A good model of SGD is not automatically a good model for every question about SGD. This matters more than people admit. If the goal is only to capture some broad stationary behavior,
+          or to reason about a local escape mechanism, then replacing SGD by GD plus carefully structured noise can be productive. But if the claim depends on mini-batch structure, discrete-time effects,
+          directional curvature, optimizer state, or the way instability is approached and maintained over time, then the simplification can destroy exactly what made the original problem interesting.
+        </p>
+        <p>
+          The practical question is not "is GD plus noise true?" but "true enough for what?" For some purposes, it is a useful coarse description. For others, especially around Edge-of-Stability-type behavior,
+          implicit bias, or selective effects induced by the sampling process, it can quietly move the theory away from the mechanism. Adam and related optimizers make this even sharper: once state, adaptivity,
+          and coordinate-wise rescaling matter, a convenient surrogate may explain the wrong object while still sounding mathematically clean.
+        </p>
+
+        <div class="outline">
+          <span class="outline-label">Next pieces to add</span>
+          <ul>
+            <li>Questions for which GD plus noise is often enough.</li>
+            <li>Questions for which the batch process itself is the phenomenon.</li>
+            <li>Why Adam is not "just SGD with a different noise model".</li>
+            <li>Descriptive versus mechanistic theories of SGD and Adam.</li>
+            <li>What changes when the target is algorithm design rather than explanation.</li>
+            <li>What a useful hierarchy of optimizer models should look like in practice.</li>
+          </ul>
+        </div>
+
+        <div class="callout technical">
+          The version I eventually want is not anti-modeling. It is a map of which idealizations are fit for which purposes.
+        </div>
+
+        <div class="footer-note">
+          Possible next revision: split this into a short taxonomy — descriptive models, asymptotic models, and design models.
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

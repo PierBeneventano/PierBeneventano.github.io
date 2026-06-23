@@ -1,0 +1,286 @@
+@import url('../stylesheet.css?v=20260623-palette2');
+
+body {
+  margin: 0;
+  color: #222;
+  background: #fff;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 28px 20px 56px;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+p + p {
+  margin-top: 14px;
+}
+
+.header-block,
+.section-card,
+.note-shell {
+  padding: 20px;
+}
+
+.header-block {
+  padding-top: 8px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 12px;
+}
+
+.kicker,
+.badge {
+  display: none;
+}
+
+.lede,
+.section-copy,
+.card-copy,
+.note-meta,
+.footer-note {
+  color: #555;
+}
+
+.lede {
+  max-width: 680px;
+}
+
+.index-grid {
+  display: block;
+}
+
+.section-card {
+  border-bottom: 1px solid #ddd;
+}
+
+.section-card:last-child {
+  border-bottom: 0;
+}
+
+.section-copy {
+  margin-top: 8px;
+  max-width: 680px;
+}
+
+.note-list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.note-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 20px;
+  align-items: center;
+  color: inherit;
+  padding: 8px 0;
+}
+
+.note-card:hover .note-title,
+.note-card:focus-visible .note-title {
+  color: #f09228;
+}
+
+.note-topline {
+  display: none;
+}
+
+.note-thumb-card {
+  width: 160px;
+  min-height: 90px;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  border: 3px dashed #aaa;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.note-thumb-card span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.note-thumb-card small {
+  margin-top: 6px;
+  font-size: 12px;
+}
+
+.note-thumb-card.agent {
+  border-color: #5aa7d8;
+  background: #eff8ff;
+  color: #17384d;
+}
+
+.note-thumb-card.training {
+  border-color: #b35ac0;
+  background: #f5f0ff;
+  color: #241a38;
+}
+
+.note-thumb-card.nontechnical {
+  border-color: #4a9d5c;
+  background: #eef9f0;
+  color: #17351f;
+}
+
+.note-title {
+  margin-bottom: 4px;
+}
+
+.card-copy {
+  max-width: 680px;
+}
+
+.note-meta {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.page-nav {
+  display: flex;
+  gap: 16px;
+  padding: 0 0 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #aaa;
+}
+
+.back-link,
+.index-link {
+  color: #1772d0;
+}
+
+.note-header {
+  margin-bottom: 22px;
+}
+
+.note-header h1 {
+  margin-bottom: 12px;
+}
+
+.note-header .lede {
+  margin-bottom: 8px;
+}
+
+.note-body {
+  max-width: 720px;
+}
+
+.note-body h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.note-body ul {
+  margin-top: 10px;
+  padding-left: 22px;
+}
+
+.note-body li + li {
+  margin-top: 6px;
+}
+
+.callout,
+.outline {
+  margin-top: 20px;
+  padding: 12px 0 12px 16px;
+  border-left: 3px solid #aaa;
+  color: #555;
+}
+
+.outline-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #222;
+  font-weight: 700;
+}
+
+.footer-note {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  main {
+    padding: 18px 12px 42px;
+  }
+
+  .header-block,
+  .section-card,
+  .note-shell {
+    padding: 16px 8px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .note-card {
+    grid-template-columns: 118px 1fr;
+    gap: 12px;
+  }
+
+  .note-thumb-card {
+    width: 118px;
+    min-height: 70px;
+    padding: 8px 6px;
+  }
+
+  .note-thumb-card span {
+    font-size: 16px;
+  }
+
+  .note-thumb-card small {
+    font-size: 11px;
+  }
+}
